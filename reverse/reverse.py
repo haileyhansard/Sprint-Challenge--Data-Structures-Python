@@ -45,13 +45,24 @@ class LinkedList:
         #check if the next value is None, if it is, set the head to be node
         if node.get_next() is None:
             self.head = node
-        #if there is a next,
+        #if there is a next, there are more than 1 node in the data
         if node.get_next():
             #reverse the list by inputting the node's value onto the next position
             self.reverse_list(node.get_next(), node)
         #otherwise, set the next position as the previous value    
         node.set_next(prev)
 
+# 1 -> 2 -> 3 -> None
+# 3 -> 2 -> 1 -> None
+#other way to reverse:
+        # prev = None
+        # current = self.head
+        # while(current is not None):
+        #     next_node = current.next_node
+        #     current.next_node = prev
+        #     prev = current
+        #     current = next_node
+        # self.head = prev
 
 
 #---testing---#

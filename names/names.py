@@ -40,7 +40,8 @@ print (f"runtime: {end_time - start_time} seconds")
 # diff = n2 - n1
 # duplicates.append(diff)
 
-
+#intersecting sets
+#duplicates = names_1.intersection(names_2)
 
 
 
